@@ -1,0 +1,45 @@
+* {
+    margin: 0 auto;
+}
+
+body {
+    width: 80%;
+}
+
+header {
+    display: flex;
+    margin: 30px;
+    justify-content: space-around;
+}
+
+.list {
+    display: flex;
+}
+.list li:not(:last-child) {
+    margin-right: 30px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.mid {
+    display: flex;
+}
+
+article {
+    border: 1px solid #bbb;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 15px 0;
+    line-height: 30px;
+}
+
+article li::marker {
+    content: '✅ ';
+}
+
+.imgBox {
+    display: flex;
+}
