@@ -57,7 +57,7 @@ section {
     display: inline-block;
     background-color: white;
     border-radius: 20px;
-    padding: 20px 30px 20px 30px;
+    padding: 40px 45px 40px 45px;
     box-shadow: 2px 4px 12px #00000014;
 }
 
@@ -72,11 +72,12 @@ article li::marker {
 }
 
 .myinfo {
-    font-size: 14px;
+    font-size: 16px;
     padding: 50px;
 }
 
 .profileimg {
+    width: 350px;
     border-radius: 20px;
     box-shadow: 2px 4px 12px #00000014;
 }
@@ -113,12 +114,11 @@ table {
 }
 
 .desc {
-    font-size: 14px;
+    font-size: 16px;
     padding: 20px 20px 0px 20px;
 }
 
-#project tr {
-    border-collapse: collapse;
-    border-bottom: 1px solid black;
+#project h1 {
+    margin-bottom: 60px;
 }
 
