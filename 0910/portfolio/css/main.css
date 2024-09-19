@@ -76,7 +76,7 @@ article li::marker {
     padding: 50px;
 }
 
-img {
+.profileimg {
     border-radius: 20px;
     box-shadow: 2px 4px 12px #00000014;
 }
