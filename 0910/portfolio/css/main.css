@@ -1,21 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
 
 body {
-    background-color: #f5f5f5;
-    color: #2f2f2f;
+    background-color: #5a5a69;
+    color: white;
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 16px;
     margin: auto;
     height: 200vh;
 }
 
-#wrap {
-    width: 85%;
-    margin: 0 auto;
-}
-
 header {
     text-align: center;
+    padding: 10px 0px 20px 0px;
+    background-color: #3c3c46;
 }
 
 h2, .list-container {
@@ -24,7 +21,7 @@ h2, .list-container {
 
 a {
     text-decoration: none;
-    color: #2f2f2f;
+    color: white;
 }
 
 .list-container {
@@ -39,11 +36,11 @@ a {
     margin-right: 30px;
 }
 
-/* .intro {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-} */
+@media (max-width: 975px) {
+    #mid {
+        margin-top: 35px;
+    }
+}
 
 #mid {
     display: flex;
@@ -56,15 +53,16 @@ a {
 section {
     display: inline-block;
     background-color: white;
-    border-radius: 20px;
-    padding: 40px 45px 40px 45px;
+    border-radius: 10px;
+    padding: 20px 25px 20px 25px;
     box-shadow: 2px 4px 12px #00000014;
 }
 
 article {
     line-height: 30px;
-    padding: 15px;
+    padding: 25px;
     text-align: left;
+    color: #2f2f2f;
 }
 
 article li::marker {
@@ -78,7 +76,7 @@ article li::marker {
 
 .profileimg {
     width: 350px;
-    border-radius: 20px;
+    border-radius: 10px;
     box-shadow: 2px 4px 12px #00000014;
 }
 
@@ -103,7 +101,7 @@ table {
 .uselang {
     display: inline-block;
     padding: 5px 8px 5px 8px;
-    background-color: white;
+    background-color: rgb(212, 212, 212);
     border-radius: 8px;
 }
 
@@ -117,8 +115,18 @@ table {
     font-size: 16px;
     padding: 20px 20px 0px 20px;
 }
+.desc a {
+    color: #2f2f2f;
+}
 
 #project h1 {
     margin-bottom: 60px;
 }
 
+.pjtable {
+    border: 1px solid white;
+    padding: 55px 30px 40px 30px;
+    border-radius: 10px;
+    color: #2f2f2f;
+    background-color: white;
+}
