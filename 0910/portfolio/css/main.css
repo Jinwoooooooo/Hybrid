@@ -9,6 +9,7 @@ body {
     height: 200vh;
 }
 
+/* ======================================= */
 header {
     text-align: center;
     padding: 10px 0px 20px 0px;
@@ -41,7 +42,9 @@ a {
         margin-top: 35px;
     }
 }
+/* ======================================= */
 
+/* ======================================= */
 #mid {
     display: flex;
     padding: 50px 0px;
@@ -54,19 +57,19 @@ section {
     display: inline-block;
     background-color: white;
     border-radius: 10px;
-    padding: 20px 25px 20px 25px;
     box-shadow: 2px 4px 12px #00000014;
+    width: 560px;
 }
 
 article {
     line-height: 30px;
-    padding: 25px;
     text-align: left;
     color: #2f2f2f;
+    padding: 20px 30px 20px 30px;
 }
 
-article li::marker {
-    content: '✅ ';
+article p {
+    text-align: justify;
 }
 
 .myinfo {
@@ -75,7 +78,7 @@ article li::marker {
 }
 
 .profileimg {
-    width: 350px;
+    width: 250px;
     border-radius: 10px;
     box-shadow: 2px 4px 12px #00000014;
 }
@@ -91,7 +94,9 @@ table {
 .myinfolist:not(:last-child) {
     padding-right: 20px;
 }
+/* ======================================= */
 
+/* ======================================= */
 #project {
     display: flex;
     flex-direction: column;
@@ -100,9 +105,12 @@ table {
 
 .uselang {
     display: inline-block;
-    padding: 5px 8px 5px 8px;
+    padding: 3px 8px 3px 8px;
+    margin: 2px;
     background-color: rgb(212, 212, 212);
     border-radius: 8px;
+    color: white;
+    font-size: 18px;
 }
 
 .title {
@@ -117,6 +125,7 @@ table {
 }
 .desc a {
     color: #2f2f2f;
+    font-size: 30px;
 }
 
 #project h1 {
@@ -124,9 +133,41 @@ table {
 }
 
 .pjtable {
-    border: 1px solid white;
-    padding: 55px 30px 40px 30px;
     border-radius: 10px;
+    border-collapse: collapse;
     color: #2f2f2f;
     background-color: white;
+}
+
+.pjtable tr:not(:last-child) {
+    border-bottom: 1px solid #bbb;
+}
+
+.pjtable td {
+    padding: 35px;
+}
+/* ======================================= */
+
+/* ======================================= */
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.contact1 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.contact2 p {
+    display: inline;
+    margin: 10px;
+    font-size: 25px;
+}
+
+.contact2 {
+    margin-bottom: 70px;
 }
