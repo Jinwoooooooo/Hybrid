@@ -1,0 +1,107 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>jQuery Mobile</title>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<style>
+   li { list-style:none; }
+  .picture { list-style:none; padding:0; margin:0; }
+  .picture li { float:left; width:50%;}
+  .picture li a {display:block; margin:5px; border: 1px }
+  .picture li img { display:block; width:50%;  height:auto;}
+  .picture li img:hover { display:block; width:100%;  height:auto;} 
+</style>
+</head>
+
+<body>
+<div data-theme="b">
+	<div data-role="page" id="home">
+		<div data-role="header" data-theme="b">
+			<h1>PORTFOLIO</h1>
+		</div>
+		<div data-role="content" style="text-align:center">
+				<img src="image.png" style="width: 350px;">
+			<ul data-role="listview" data-inset="true">
+				<li><a href="#intro">소개</a></li>
+				<li><a href="#movie" data-rel="dialog">학교 및 학과 소개 영상</a></li>
+				<li><a href="#gallery">프로젝트</a></li>
+			</ul>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>DONG-EUI INSTITUTE OF TECHNOLOGY</h1>
+		</div>
+	</div>
+	
+	<div data-role="page" id="intro" data-theme="b">
+		<div data-role="header" data-theme="b">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>			
+			<h1>소개</h1>
+		</div>
+		<div data-role="content">
+				<div style="text-align:center">
+					<img src="profile.jpg">
+				</div>			
+			<div data-role="collapsible-set" data-theme="b" data-content-theme="e">
+				<div data-role="collapsible" data-collapsed="false">
+					<h3>인사말</h3>
+					<p>안녕하세요! 동의과학대학교 컴퓨터소프트웨어과 재학 중인 정진우라고 합니다.</p>
+					<p>포트폴리오 재밌게 구경하고 가세요! 감사합니다!</p>
+				</div>
+				<div data-role="collapsible">
+					<h3>정보</h3>
+					<p>이름: 정진우</p>
+					<p>나이: 24</p>
+					<p>전화: 010-2001-1021</p>
+					<p>거주지: 부산시 해운대구</p>
+				</div>
+				<div data-role="collapsible" >
+					<h3>연락</h3>
+					<p><img src="ico_github.png" alt="githubicon"><a href="https://github.com/Jinwoooooooo" target="_blank" style="color: white; text-decoration: none;"> Github</a></p>
+					<p><img src="ico_instagram.png" alt="githubicon" style="border-radius: 15px;"><a href="https://www.instagram.com/dangerousmanjeongjinwoo/" target="_blank" style="color: white; text-decoration: none;"> Instagram</a></p>
+				</div>
+			</div>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>DONG-EUI INSTITUTE OF TECHNOLOGY</h1>
+		</div>		
+	</div>
+	
+	<div data-role="page" id="movie" data-theme="b">
+		<div data-role="header" data-position="fixed" data-theme="b">
+			<h1>학교 및 학과 소개 영상</h1>
+		</div>
+		<div data-role="content" >
+			<div class="ui-bar ui-bar-a">동의과학대학교 소개 영상</div><br/>
+			<li><iframe width="100%" height="240px" src="https://www.youtube.com/embed/nAOCy9xraZs?si=tBryErRVB1WtBTko"></iframe></li><br/>
+			<div class="ui-bar ui-bar-a">컴퓨터소프트웨어과 소개 영상</div><br/>
+			<li><iframe width="100%" height="240px" src="https://www.youtube.com/embed/6eB46cly99E?si=k6S3IdG8HvC1PJyp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></li>
+		</div>
+		<div data-role="footer" data-theme="b">
+		</div>
+	</div>
+
+	<div data-role="page" id="gallery"  data-theme="b">
+		<div data-role="header" data-position="fixed"  data-theme="b">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>
+			<h1>프로젝트 미리보기</h1>
+		</div>
+		<div data-role="content">
+            <ul class="picture">
+				<li><a href="image1.png" rel="external"><img src="image1.png" /></a></li>	
+				<li><a href="image2.png" rel="external"><img src="image2.png" /></a></li>	
+				<li><a href="image5.png" rel="external"><img src="image5.png" /></a></li>	
+				<li><a href="image4.png" rel="external"><img src="image4.png" /></a></li>	
+				<li><a href="image3.png" rel="external"><img src="image3.png" /></a></li>	
+            </ul>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>DONG-EUI INSTITUTE OF TECHNOLOGY</h1>
+		</div>		
+	</div>
+</div>	
+</body>
+</html>
