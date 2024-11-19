@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery 예제 1</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <link rel="stylesheet" href="css1.css">
+    <script>
+        $(document).ready(function() {
+            $("#hideBtn").click(function() {
+                $("p").first().hide();
+            });
+            $("#showBtn").click(function() {
+                $("p").first().show();
+            });
+            $("#addClassBtn").click(function() {
+                $("p").last().addClass("highlight");
+            });
+            $("#removeClassBtn").click(function() {
+                $("p").last().removeClass("highlight");
+            });
+        });
+    </script>
+    <style>
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="row d-flex justify-content-center mt-100 mb-100">
+                        
+                                  
+        <div class="col-lg-6">
+           
+           <div class="card">
+               <div class="card-body text-center">
+                   <h4 class="card-title m-b-0">jQuery Example.</h4>
+               </div>
+               <ul class="list-style-none">
+                    <li class="d-flex no-block card-body">
+                       <i class="fa fa-check-circle w-30px m-t-5"></i>
+                       <div>
+                           <a href="#" class="m-b-0 font-medium p-0" data-abc="true">Example 1.</a>
+                           <span class="text-muted">$(document).ready(function() {<br>&nbsp;&nbsp;&nbsp;alert("문서가 준비되었습니다!");<br>}); </span>
+                       </div>
+                       <div class="ml-auto">
+                           <div class="tetx-right">
+                               <h5 class="text-muted m-b-0">19</h5>
+                               <span class="text-muted font-16">NOV</span>
+                           </div>
+                       </div>
+                   </li>
+
+
+                    <li class="d-flex no-block card-body border-top">
+                        <i class="fa fa-check-circle w-30px m-t-5"></i>
+                        <div>
+                            <a href="#" class="m-b-0 font-medium p-0" data-abc="true">Example 2.</a>
+                            <span class="text-muted">
+                                <button id="hideBtn">숨기기</button>
+                                <button id="showBtn">보이기</button>
+                                <p>이 문장은 숨기거나 표시할 수 있습니다.</p>
+                            </span>
+                        </div>
+                        <div class="ml-auto">
+                            <div class="tetx-right">
+                                <h5 class="text-muted m-b-0">19</h5>
+                                <span class="text-muted font-16">NOV</span>
+                            </div>
+                        </div>
+                    </li>
+
+
+                    <li class="d-flex no-block card-body border-top">
+                        <i class="fa fa-check-circle w-30px m-t-5"></i>
+                        <div>
+                            <a href="#" class="m-b-0 font-medium p-0" data-abc="true">Example 3.</a>
+                            <span class="text-muted">
+                                <button id="addClassBtn">클래스 추가</button>
+                                <button id="removeClassBtn">클래스 제거</button>
+                                <p>이 문장은 클래스가 추가되거나 제거됩니다.</p>
+                            </span>
+                        </div>
+                        <div class="ml-auto">
+                            <div class="tetx-right">
+                                <h5 class="text-muted m-b-0">19</h5>
+                                <span class="text-muted font-16">NOV</span>
+                            </div>
+                        </div>
+                    </li>
+               </ul>
+           </div>
+
+       </div>
+       </div>
+       
+</body>
+</html>

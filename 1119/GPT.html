@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Trendy Web Page</title>
+  <style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        padding: 20px;
+    }
+
+    @media (max-width: 768px) {
+        .container {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .animated {
+        animation: fadeInUp 1s ease-in-out;
+    }
+
+    .card {
+        backdrop-filter: blur(10px);
+        background: rgba(255, 255, 255, 0.3);
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero">
+    <h1>Welcome to the Future</h1>
+    <p>Where innovation meets creativity.</p>
+    <button>Explore More</button>
+  </header>
+
+  <main class="container">
+    <div class="card">
+      <h2>Feature 1</h2>
+      <p>Experience the latest in web design.</p>
+    </div>
+    <div class="card">
+      <h2>Feature 2</h2>
+      <p>Optimized for every device.</p>
+    </div>
+    <div class="card">
+      <h2>Feature 3</h2>
+      <p>Engage with modern tools.</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Trendy Web Page. All rights reserved.</p>
+  </footer>
+</body>
+</html>

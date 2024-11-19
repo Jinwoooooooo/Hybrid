@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<stuinfo>
+    <student>
+        <stname>밴더</stname>
+        <gradepoint>2.5 학점</gradepoint> 
+    </student>
+    <student>
+        <stname>바이</stname>
+        <gradepoint>3.0 학점</gradepoint> 
+    </student>
+    <student>
+        <stname>징크스</stname>
+        <gradepoint>3.5 학점</gradepoint> 
+    </student>
+    <student>
+        <stname>빅토르</stname>
+        <gradepoint>4.0 학점</gradepoint> 
+    </student>
+    <student>
+        <stname>이샤</stname>
+        <gradepoint>4.5 학점</gradepoint> 
+    </student>           
+</stuinfo>
