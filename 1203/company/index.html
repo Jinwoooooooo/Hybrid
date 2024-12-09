@@ -41,10 +41,10 @@
 		<div data-role="content" style="text-align:center">
 			<img src="img/talking.jpg" width="350px">
 			<ul data-role="listview" data-inset="true">
-				<li><a href="#info" style="padding: 20px">회사정보</a></li>
+				<li><a href="#info" style="padding: 20px">회사개요</a></li>
 				<li><a href="#business" style="padding: 20px">사업내용</a></li>
-				<li><a href="#wizard3-1" style="padding: 20px">채용정보</a></li>
-				<li><a href="#gallery" style="padding: 20px">독도사진</a></li>
+				<li><a href="#recruitment" style="padding: 20px">채용정보</a></li>
+				<li><a href="#location" style="padding: 20px">연락</a></li>
 			</ul>
 		</div>
 		<div data-role="footer" data-position="fixed" style="background-color: white;">
@@ -121,8 +121,8 @@
 				</div>
 				<div data-role="collapsible">
 					<h3>가입단체</h3>
-					<p style="font-size: 13px; line-height: 25px;">일반사단법인정보서비스산업협회(JISA)<br>
-						일반사단법인 가나가와현 정보서비스산업협회(KIA)</p>
+					<p style="font-size: 13px; line-height: 25px;"><a href="https://www.jisa.or.jp/" target="_blank" style="text-decoration: none; color: #e5680c;">일반사단법인정보서비스산업협회(JISA)</a><br>
+						<a href="https://kia.or.jp/" target="_blank" style="text-decoration: none; color: #e5680c;">일반사단법인 가나가와현 정보서비스산업협회(KIA)</a></p>
 				</div>
 			</div>
 		</div>
@@ -141,7 +141,7 @@
 			<img src="img/system.png" width="300px" style="background-color: white;">
 			<p style="color:#939393; font-size: 12px; font-weight: lighter;">(주)토마토 홈페이지 개발사업 분야 이미지</p>
 			<div data-role="collapsible-set">
-				<div data-role="collapsible" data-collapsed="false" style="text-align: start; font-size: 13px;">
+				<div data-role="collapsible" style="text-align: start; font-size: 13px;">
 					<h1>웹 시스템 개발</h1>
 					<p><strong>1.</strong> J2EE 및 .NET 기반 환경의 시스템 개발</p>
 					<p><strong>2.</strong> 은행(투신 DAY 2분 서플리, 재무 데이터 분석 시스템 개발)</p>
@@ -170,63 +170,37 @@
 		</div>
 	</div>
 	
-	<div data-role="page" id="wizard3-1">
-		<div data-role="header">
-			<h1>독도 노래1</h1>
-		</div>
-		<div data-role="content">
-			<div class="ui-bar ui-bar-e">홀로 아리랑</div><br/>
-			<audio controls width="100%" preload="metadata">
-				<source src="arirangalone.mp3" type="audio/mp3">
-			</audio>	
-			<img src="3-1.jpg" alt="" width="100%">
-		</div>
-		<div data-role="footer">
-			<a href="#home"  data-direction="reverse">이전</a>
-			<a href="#wizard3-2" data-rel="dialog" data-transition="slide">다음</a>
-		</div>
-	</div>
-
-	<div data-role="page" id="wizard3-2">
-		<div data-role="header">
-			<h1>독도 노래2</h1>
-		</div>
-		<div data-role="content">
-			<div class="ui-bar ui-bar-e">독도는 우리땅</div><br/>
-			<audio controls width="100%" preload="metadata">
-				<source src="dockdo.mp3" type="audio/mp3">
-			</audio>			
-			<img src="3-2.jpg" alt="" width="100%">
-		</div>
-		<div data-role="footer">
-			<a href="#wizard3-1"  data-direction="reverse">이전</a>
-			<a href="#home">처음</a>
-		</div>
-	</div>
-
-	<div data-role="page" id="gallery"  data-theme="b">
-		<div data-role="header" data-position="fixed"  data-theme="b">
+	<div data-role="page" id="recruitment">
+		<div data-role="header" style="background-color: white;">
 			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>
-			<h1>독도 갤러리</h1>
+			<h1>채용 정보</h1>
 		</div>
-		<div data-role="content">
-            <ul class="picture">
-				<li><a href="4-1.jpg" rel="external"><img src="4-1.jpg" /></a></li>	
-				<li><a href="4-2.jpg" rel="external"><img src="4-2.jpg" /></a></li>	
-				<li><a href="4-3.jpg" rel="external"><img src="4-3.jpg" /></a></li>	
-				<li><a href="4-4.jpg" rel="external"><img src="4-4.jpg" /></a></li>	
-				<li><a href="4-5.jpg" rel="external"><img src="4-5.jpg" /></a></li>	
-				<li><a href="4-6.jpg" rel="external"><img src="4-6.jpg" /></a></li>	
-				<li><a href="4-7.jpg" rel="external"><img src="4-7.jpg" /></a></li>	
-				<li><a href="4-8.jpg" rel="external"><img src="4-8.jpg" /></a></li>	
-				<li><a href="4-9.jpg" rel="external"><img src="4-9.jpg" /></a></li>	 
-				<li><a href="4-10.jpg" rel="external"><img src="4-10.jpg" /></a></li>    
-				<li><a href="4-11.jpg" rel="external"><img src="4-11.jpg" /></a></li>   
-				<li><a href="4-12.jpg" rel="external"><img src="4-12.jpg" /></a></li>
-            </ul>
+		<div data-role="content" style="text-align: center;">
+			<iframe src="https://job.mynavi.jp/25/pc/search/corp105846/outline.html" frameborder="0" width="100%" height="1000px"></iframe>
 		</div>
-		<div data-role="footer" data-position="fixed" data-theme="b">
-			<h1>독도사랑_홍길동</h1>
+		<div data-role="footer" data-position="fixed" style="background-color: white;">
+			<h1 style="color:#939393; font-size: 12px; font-weight: lighter;">Copyright ©2024  Tomato.co.,LTD.</h1>
+		</div>
+	</div>
+
+	<div data-role="page" id="location">
+		<div data-role="header" data-position="fixed" style="background-color: white;">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>
+			<h1>연락</h1>
+		</div>
+		<div data-role="content" style="font-size: 13px; line-height: 20px;">
+			<h4 style="font-size: 15px; color: #e5680c;">시부야 본사</h4>
+			<p>〒150-0002 도쿄도 시부야구 시부야 2가 11-6 라운드 크로스 시부야 4층</p>
+			<p>TEL : 03-6690-9788</p>
+			<p><strong><span style="font-size: 14px;">【JR 야마노테선】</span></strong><br>
+				・시부야역 : 중앙출구 도보 10분 (시부야 히카리에 방면)</p>
+			<p><strong><span style="font-size: 14px;">【도큐선, 도쿄 메트로 선】</span></strong><br>
+				・시부야역 : B5번출구 <시부야 히카리 2층>에서 도보 9분<br>
+				・오모테산도역 : B1번출구 도보 11분</p>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.699972362984!2d139.70440871280823!3d35.65976297247996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b5501c81215%3A0x7223404af3a244e6!2sTomato!5e0!3m2!1sko!2skr!4v1733755129526!5m2!1sko!2skr" width="100%" height="450" style="border:0; margin-top: 20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>		
+		</div>
+		<div data-role="footer" data-position="fixed" style="background-color: white;">
+			<h1 style="color:#939393; font-size: 12px; font-weight: lighter;">Copyright ©2024  Tomato.co.,LTD.</h1>
 		</div>		
 	</div>
 </div>	
