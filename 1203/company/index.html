@@ -1,0 +1,232 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>jQuery Mobile</title>
+	
+	<link rel="stylesheet" href="jquery.mobile/jquery.mobile-1.4.5.min.css"/>
+	<script src="jquery.mobile/jquery-1.11.1.min.js"></script>
+	<script src="jquery.mobile/jquery.mobile-1.4.5.min.js"></script>
+	
+	<style>
+		li { list-style:none; }
+		.picture { list-style:none; padding:0; margin:0; }
+		.picture li { float:left; width:50%;}
+		.picture li a {display:block; margin:5px; border: 1px }
+		.picture li img { display:block; width:50%;  height:auto;}
+		.picture li img:hover { display:block; width:100%;  height:auto;} 
+
+		table {
+			font-size: 13px;
+			line-height: 25px;
+		}
+		td:first-child {
+			width:80px;
+		}
+	</style>
+
+	<!-- todo
+	 사업내용 컬러 변경, 채용정보 성장과정? 시작하기
+	 참고하면서 -> https://blog.naver.com/dnskorea7/223340836573
+	 -->
+	 
+</head>
+<body>
+<div data-theme="w">
+	<div data-role="page" id="home">
+		<div data-role="header" style="text-align:center; background-color: white; padding-top: 5px;">
+			<img src="img/tomatologo.png" width="225px">
+		</div>
+		<div data-role="content" style="text-align:center">
+			<img src="img/talking.jpg" width="350px">
+			<ul data-role="listview" data-inset="true">
+				<li><a href="#info" style="padding: 20px">회사정보</a></li>
+				<li><a href="#business" style="padding: 20px">사업내용</a></li>
+				<li><a href="#wizard3-1" style="padding: 20px">채용정보</a></li>
+				<li><a href="#gallery" style="padding: 20px">독도사진</a></li>
+			</ul>
+		</div>
+		<div data-role="footer" data-position="fixed" style="background-color: white;">
+			<h1 style="color:#939393; font-size: 12px; font-weight: lighter;">Copyright ©2024  Tomato.co.,LTD.</h1>
+		</div>
+	</div>
+	
+	<!-- 회사정보 -->
+	<div data-role="page" id="info" data-theme="b">
+		<div data-role="header" data-theme="b">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>			
+			<h1>회사 정보</h1>
+		</div>
+		<div data-role="content">
+				<div style="text-align:center">
+					<img src="img/tomatologo.png" width="225px" style="background-color: white; margin: 25px 0px 25px 0px; padding: 15px;">
+				</div>			
+			<div data-theme="b" data-content-theme="e">
+				<div data-role="collapsible" data-collapsed="false">
+					<h3>회사개요</h3>
+					<table>
+						<tr>
+							<td>회사명</td>
+							<td>주식회사 토마토</td>
+						</tr>
+						<tr>
+							<td>대표자</td>
+							<td>대표이사 裵漢泰 (ベ ハンテ)</td>
+						</tr>
+						<tr>
+							<td>설립일</td>
+							<td>1998년 5월 8일</td>
+						</tr>
+						<tr>
+							<td>자본금</td>
+							<td>5,000만엔 (자산 10억 2,302만엔)</td>
+						</tr>
+						<tr>
+							<td>직원</td>
+							<td>181명 (2024년 4월 1일 현재)</td>
+						</tr>
+					</table>
+				</div>
+				<div data-role="collapsible">
+					<h3>회사업무</h3>
+					<p style="font-size: 13px; line-height: 25px;">
+						WebApplication 소프트웨어 개발 (Java, .NET 등)<br>
+						하이브리드 앱 개발<br>
+						안드로이드 앱 개발<br>
+						IOS 앱 개발<br>
+						AI&IoT 개발
+					</p>
+				</div>
+				<div data-role="collapsible">
+					<h3>회사연혁</h3>
+					<table>
+						<tr>
+							<td>1998년 5월</td>
+							<td>소프트웨어 개발을 목적으로 설립</td>
+						</tr>
+						<tr>
+							<td>2000년 11월</td>
+							<td>주식회사로의 조직 변경</td>
+						</tr>
+						<tr>
+							<td>2004년 4월</td>
+							<td>업무 확장에 따라 본사를 요코하마시에서 도쿄 시부야로 이전</td>
+						</tr>
+						<tr>
+							<td>2005년 11월</td>
+							<td>자본금 1,000만엔에서 5,000만엔으로 증자</td>
+						</tr>
+					</table>
+				</div>
+				<div data-role="collapsible">
+					<h3>가입단체</h3>
+					<p style="font-size: 13px; line-height: 25px;">일반사단법인정보서비스산업협회(JISA)<br>
+						일반사단법인 가나가와현 정보서비스산업협회(KIA)</p>
+				</div>
+			</div>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1 style="color:#939393; font-size: 12px; font-weight: lighter;">Copyright ©2024  Tomato.co.,LTD.</h1>
+		</div>		
+	</div>
+	
+	<!-- 사업내용 -->
+	<div data-role="page" id="business">
+		<div data-role="header" data-position="fixed" style="background-color: white;">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>
+			<h1>사업내용</h1>
+		</div>
+		<div data-role="content" style="text-align: center;">
+			<img src="img/system.png" width="300px" style="background-color: white;">
+			<p style="color:#939393; font-size: 12px; font-weight: lighter;">(주)토마토 홈페이지 개발사업 분야 이미지</p>
+			<div data-role="collapsible" data-collapsed="false" style="text-align: start; font-size: 13px;">
+				<h1>웹 시스템 개발</h1>
+				<p><strong>1.</strong> J2EE 및 .NET 기반 환경의 시스템 개발</p>
+				<p><strong>2.</strong> 은행(투신 DAY 2분 서플리, 재무 데이터 분석 시스템 개발)</p>
+				<p><strong>3.</strong> 증권(주거래시스템, 약정관리시스템 개발)</p>
+				<p><strong>4.</strong> 보험(대리점 모니터링 시스템 의료 데이터 표준화 서비스 개발)</p>
+				<p><strong>5.</strong> 통신(시공 관리 시스템, 신전통 공제 시스템, 공중 무선 LAN 시스템, 블로그 검색 시스템 개발)</p>
+				<p><strong>6.</strong> 물류(통판 상품 관리 시스템, 집집 전달 WEB화 시스템, 거래 중개 AGENT SYSTEM, 익스프레스 시스템 개발)</p>
+				<p><strong>7.</strong> Database 설계 및 구축</p>
+				<p><strong>8.</strong> DB 튜닝 및 서버 튜닝</p>
+			</div>
+			<div data-role="collapsible" style="text-align: start; font-size: 13px;">
+				<h1>스마트폰 앱 개발</h1>
+				<p><strong>1.</strong> Android 앱 개발</p>
+				<p><strong>2.</strong> iPhone/iPad 앱 개발</p>
+				<p><strong>3.</strong> 하이브리드형 앱 개발</p>
+			</div>
+			<div data-role="collapsible" style="text-align: start; font-size: 13px;">
+				<h1>AI & Cloud Computing 관련 개발</h1>
+				<p><strong>1.</strong> Amazon AWS, Microsoft Azure, Google Cloud 기반 시스템 개발</p>
+				<p><strong>2.</strong> ChatGPT API 등의 AI를 활용한 앱 및 웹 서비스 위탁 개발</p>
+			</div>
+		</div>
+		<div data-role="footer" data-position="fixed" style="background-color: white;">
+			<h1 style="color:#939393; font-size: 12px; font-weight: lighter;">Copyright ©2024  Tomato.co.,LTD.</h1>
+		</div>
+	</div>
+	
+	<div data-role="page" id="wizard3-1">
+		<div data-role="header">
+			<h1>독도 노래1</h1>
+		</div>
+		<div data-role="content">
+			<div class="ui-bar ui-bar-e">홀로 아리랑</div><br/>
+			<audio controls width="100%" preload="metadata">
+				<source src="arirangalone.mp3" type="audio/mp3">
+			</audio>	
+			<img src="3-1.jpg" alt="" width="100%">
+		</div>
+		<div data-role="footer">
+			<a href="#home"  data-direction="reverse">이전</a>
+			<a href="#wizard3-2" data-rel="dialog" data-transition="slide">다음</a>
+		</div>
+	</div>
+
+	<div data-role="page" id="wizard3-2">
+		<div data-role="header">
+			<h1>독도 노래2</h1>
+		</div>
+		<div data-role="content">
+			<div class="ui-bar ui-bar-e">독도는 우리땅</div><br/>
+			<audio controls width="100%" preload="metadata">
+				<source src="dockdo.mp3" type="audio/mp3">
+			</audio>			
+			<img src="3-2.jpg" alt="" width="100%">
+		</div>
+		<div data-role="footer">
+			<a href="#wizard3-1"  data-direction="reverse">이전</a>
+			<a href="#home">처음</a>
+		</div>
+	</div>
+
+	<div data-role="page" id="gallery"  data-theme="b">
+		<div data-role="header" data-position="fixed"  data-theme="b">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>
+			<h1>독도 갤러리</h1>
+		</div>
+		<div data-role="content">
+            <ul class="picture">
+				<li><a href="4-1.jpg" rel="external"><img src="4-1.jpg" /></a></li>	
+				<li><a href="4-2.jpg" rel="external"><img src="4-2.jpg" /></a></li>	
+				<li><a href="4-3.jpg" rel="external"><img src="4-3.jpg" /></a></li>	
+				<li><a href="4-4.jpg" rel="external"><img src="4-4.jpg" /></a></li>	
+				<li><a href="4-5.jpg" rel="external"><img src="4-5.jpg" /></a></li>	
+				<li><a href="4-6.jpg" rel="external"><img src="4-6.jpg" /></a></li>	
+				<li><a href="4-7.jpg" rel="external"><img src="4-7.jpg" /></a></li>	
+				<li><a href="4-8.jpg" rel="external"><img src="4-8.jpg" /></a></li>	
+				<li><a href="4-9.jpg" rel="external"><img src="4-9.jpg" /></a></li>	 
+				<li><a href="4-10.jpg" rel="external"><img src="4-10.jpg" /></a></li>    
+				<li><a href="4-11.jpg" rel="external"><img src="4-11.jpg" /></a></li>   
+				<li><a href="4-12.jpg" rel="external"><img src="4-12.jpg" /></a></li>
+            </ul>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>독도사랑_홍길동</h1>
+		</div>		
+	</div>
+</div>	
+</body>
+</html>
